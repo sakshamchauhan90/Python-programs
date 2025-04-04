@@ -1,0 +1,14 @@
+
+
+
+Host github.com
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_rsa_sakshamchauhan90
+  IdentitiesOnly yes
+
+eval "$(ssh-agent -s)"
+ssh-add -D  # Remove all existing keys
+ssh-add ~/.ssh/id_rsa_sakshamchauhan90  # Add the correct key
+
+
